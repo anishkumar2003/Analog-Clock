@@ -38,7 +38,7 @@ const changebg = () => {
             clock.style.boxShadow = 'none';
         },3000);
     }
-    isWhiteBackground = !isWhiteBackground; // Toggle the background color state
+    isWhiteBackground = !isWhiteBackground; 
 }
 
 btn.addEventListener('click', changebg);

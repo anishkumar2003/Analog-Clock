@@ -1,0 +1,105 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* transition: all ease-in 0.2s; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    transition: all ease-in 2s;
+    background-color: white;
+}
+.heading
+{
+    font-size: 3rem;
+    font-family: cursive;
+}
+
+.clock
+{
+    background-image: url(images/shiny-clock-face-self-inking-rubber-stamp-s-542-12hr.webp);
+    background-size: cover;
+    min-height: 18rem;
+    min-width: 18rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    transition: all ease-in 0.2s;
+}
+
+
+.hour,.min,.sec
+{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hour{
+    height: 10rem;
+    width: 10rem;
+}
+
+.hour:before
+{
+    content: "";
+    position: absolute;
+    height: 40%;
+    background-color: grey;
+    width: 6px;
+    top: 16px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.min{
+    height: 10rem;
+    width: 10rem;
+}
+.min::before
+{
+    content: "";
+    position: absolute;
+    height: 45%;
+    background-color: green;
+    width: 6px;
+    top: 14px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+}
+.sec{
+    height: 10rem;
+    width: 10rem;
+}
+
+.sec:before
+{
+    content: "";
+    position: absolute;
+    height: 55%;
+    background-color: rgb(245, 58, 58);
+    width: 6px;
+    top: 1px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+.btn
+{
+    padding: 0.5rem;
+    border: none;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
